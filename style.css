@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  color: #0f172a;
+}
+
+header {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0f172a;
+}
+
+main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.buscador {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+select,
+button {
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.12);
+}
+
+#mensajeError {
+  display: none;
+  margin-top: 1rem;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+#resultado {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.8);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.tarjeta-clima {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tarjeta-clima h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.altitud {
+  margin: 0;
+  color: #475569;
+}
+
+.temperatura {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.detalles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.detalle-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.etiqueta {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.valor {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+footer {
+  text-align: center;
+  margin: 2rem 0 3rem;
+  color: #334155;
+}
